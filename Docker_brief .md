@@ -4,7 +4,6 @@
 
 - Connect to server
 	- ssh root@127.0.0.1 -p 10022
-	- 111111
 
 - Access to directory
 	- cd /home/daimler/env
