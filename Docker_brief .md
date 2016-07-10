@@ -18,7 +18,7 @@
 	- docker ps
 
 - Run a new command in a running container
-	- docker exec (-i, -t) /bin/bash
+	- docker exec -it [container id] /bin/bash
 	- [Official ref](https://docs.docker.com/engine/reference/commandline/exec/)
 
 #### Port 
@@ -41,4 +41,3 @@
 
 - list database
 	- \l
-
