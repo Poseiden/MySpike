@@ -4,7 +4,8 @@
 
 
 - Start docker
-	- service docker start
+	- service docker start (Linux)
+	- open -a Docker (Mac)
 
 - Start virtual enviroment
 	- docker-compose up -d
