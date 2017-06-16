@@ -16,10 +16,18 @@
 
 - (Notice that if you use PostgreSQL version 9.1 or earlier, use the procpidcolumn instead of the pidcolumn because PostgreSQL changed procidcolumn to pidcolumn since version 9.2)
 
-### Drop databse
+### Create database
+
+``` createdb databasename -O owner -U username ```
+
+### Grant privileges on database
+
+``` psql -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE databasename to database_owner" ```
+
+### Drop database
 
 ```DROP DATABASE target_database ```
 
 
 ### Ref
-[http://www.postgresqltutorial.com/postgresql-drop-database/](http://www.postgresqltutorial.com/postgresql-drop-database/)
+- [http://www.postgresqltutorial.com/postgresql-drop-database/](http://www.postgresqltutorial.com/postgresql-drop-database/)
