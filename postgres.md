@@ -1,6 +1,6 @@
 ### Backup 
 
-```pg_dump --host "hostname" --port "port" --username "username" -W "databasename"  > your_output_file_path.dmp ```
+```pg_dump -h hostname -p 5432 -U username databasename > your_output_file_path.dmp```
 
 ### Restore
 
