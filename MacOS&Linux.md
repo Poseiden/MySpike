@@ -9,3 +9,9 @@
 
 ### 列出所有本地可用用户 [Ref](https://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users)
 ` cut -d: -f1 /etc/passwd `
+
+### echo write file
+` echo 'your_text' > your_file `
+
+### echo append file
+` echo 'your text' >> your_file `
