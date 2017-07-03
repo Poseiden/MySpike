@@ -7,7 +7,7 @@
 ### 查看所有进程监听的端口
 ` sudo lsof -i -P | grep -i "listen" `
 
-### 列出所有本地可用用户 [Ref](https://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users)
+### 列出所有本地可用用户 ([ref](https://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users))
 ` cut -d: -f1 /etc/passwd `
 
 ### echo write file
