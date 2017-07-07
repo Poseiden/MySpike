@@ -15,3 +15,10 @@
 
 ### echo append file
 ` echo 'your text' >> your_file `
+
+### system service 
+` systemctl start service_name `
+
+` systemctl stop service_name `
+
+` systemctl restart service_name `
