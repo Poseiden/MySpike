@@ -28,6 +28,13 @@
 
 ```DROP DATABASE target_database ```
 
+### Create user with read only privilege
+``` sql 
+SELECT * FROM pg_roles; -- check all users in pg
+ CREATE USER your_username WITH PASSWORD 'your_password';
+ -- (Switch database you want to)
+ GRANT select ON ALL TABLES IN SCHEMA public to your_username;
+``` 
 
 ### Ref
 - [http://www.postgresqltutorial.com/postgresql-drop-database/](http://www.postgresqltutorial.com/postgresql-drop-database/)
