@@ -28,3 +28,6 @@
 
 ### change owner and file group
 ` chown new_owner:new_group your_file`
+
+###  generate ssh key
+` ssh-keygen -t rsa`
