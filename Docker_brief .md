@@ -1,4 +1,4 @@
-##Docker
+## Docker
 
 #### Commands 
 
@@ -30,4 +30,10 @@
 ```
 FROM repository_name[:latest]
 RUN bash commands 
+```
+
+- Docker copy
+```
+docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
+docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 ```
