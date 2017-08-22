@@ -1,0 +1,1 @@
+- https://stackoverflow.com/questions/15314760/managing-ssh-keys-within-jenkins-for-git
