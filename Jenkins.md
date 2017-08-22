@@ -1,1 +1,2 @@
 - https://stackoverflow.com/questions/15314760/managing-ssh-keys-within-jenkins-for-git
+- https://support.cloudbees.com/hc/en-us/articles/216118748-How-to-Start-Stop-or-Restart-your-Instance-
