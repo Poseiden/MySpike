@@ -34,3 +34,6 @@
 
 ### get timestamp
 ` date +%Y%m%d%H%M%S`
+
+### change user
+` sudo su jenkins -s /bin/bash`
