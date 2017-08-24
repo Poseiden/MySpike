@@ -31,3 +31,6 @@
 
 ###  generate ssh key
 ` ssh-keygen -t rsa`
+
+### get timestamp
+` date +%Y%m%d%H%M%S`
