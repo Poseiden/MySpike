@@ -37,3 +37,7 @@
 
 ### change user
 ` sudo su jenkins -s /bin/bash`
+
+### scp 
+- 下载 ` scp remote_user@remote_address:file_absolute_path local_file_path`
+- 上传 ` scp local_file_path remote_user@remote_address:file_absolute_path`
