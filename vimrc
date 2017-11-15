@@ -62,5 +62,6 @@ set fdm=indent
 nmap ;' :let @*=expand("%")<CR>
 nmap ,. :let @*=expand("%:p")<CR>
 
+"To press F5 under ctrlp opening for finding a file node which created by NERDTree without reopen vim
 let g:NERDTreeChDirMode       = 2
 let g:ctrlp_working_path_mode = 'rw'
