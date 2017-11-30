@@ -65,3 +65,33 @@ nmap ,. :let @*=expand("%:p")<CR>
 "To press F5 under ctrlp opening for finding a file node which created by NERDTree without reopen vim
 let g:NERDTreeChDirMode       = 2
 let g:ctrlp_working_path_mode = 'rw'
+
+"Mapping shortcut for navigating in split window.
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"Only enable emmet plugin for insert mode and html css file type.
+let g:user_emmet_mode='i'    "only enable insert mode functions
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+"resize window vertically
+if bufwinnr(1)
+  map + :resize +5<CR>
+  map _ :resize -5<CR>
+endif
+
+"resize window horizontally
+if bufwinnr(1)
+  map & :vertical resize -5<CR>
+  map * :vertical resize +5<CR>
+endif
+
+"show dattime on statusbar
+set ruler
+set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+
+"show datetime on vim-airline
+:let g:airline_section_b = '%{strftime("%H:%M")}'
