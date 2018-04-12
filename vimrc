@@ -34,8 +34,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " ctrlp plugin
 let g:ctrlp_custom_ignore = {
-  \ 'dir' : '\v[\/](node_modules|dist)|(\.(git|hg|svn))$',
-  \ 'file' : '\v\.(swp)$',
+  \ 'dir' : '\v[\/](node_modules|dist|out|build|classes)|(\.(git|hg|svn|idea))$',
+  \ 'file' : '\v\.(swp|class|jar)$',
   \ }
 let g:ctrlp_show_hidden = 1
 
