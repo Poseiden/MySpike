@@ -40,5 +40,5 @@ docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 
 - Docker clean all images named <None>
 ```
-docker images | grep none | grep -v company_car_api | awk '{print $3}' | xargs docker rmi -f
+docker images | grep none | awk '{print $3}' | xargs docker rmi -f
 ```
