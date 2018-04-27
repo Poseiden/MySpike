@@ -12,3 +12,6 @@
 
 ## backup mysql database to sql file
 - mysqldump -h your_server -u username -p database_name > sql_file.sql
+
+## restore mysql backup_file
+- mysql -u username -p database < backup.sql
