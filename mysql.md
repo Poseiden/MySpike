@@ -9,3 +9,6 @@
 
 ## grant privileges
 - grant all on database.tables(*) to 'your_user'@'host';
+
+## backup mysql database to sql file
+- mysqldump -h your_server -u username -p database_name > sql_file.sql
