@@ -8,7 +8,10 @@
 - create user 'your_user'@'host(%)' identified by 'password';
 
 ## grant privileges
-- grant all on database.tables(*) to 'your_user'@'host';
+- GRANT specified_privilege ON *.* TO 'username'@'your_host';
+
+## create and grant 
+- GRANT specified_privilege/ALL PRIVILEGES ON *.* TO 'username'@'host' IDENTIFIED BY 'password';
 
 ## backup mysql database to sql file
 - mysqldump -h your_server -u username -p database_name > sql_file.sql
