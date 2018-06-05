@@ -17,16 +17,43 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'mileszs/ack.vim'
 Bundle 'wakatime/vim-wakatime'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()            " required
-
 filetype plugin indent on
+
 syntax on
+
+colorscheme molokai
+
+set fdm=indent
 set number
 set relativenumber
 set hlsearch
+set fileformat=unix
+set autoindent
+
+au BufNewFile,BufRead *.py
+\ set tabstop=4|
+\ set softtabstop=4|
+\ set shiftwidth=4|
+\ set textwidth=79|
+\ set expandtab
+
+"Flagging Unnecessary Whitespace
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+au BufNewFile,BufRead *.js,*.html,*.css
+\ set tabstop=2|
+\ set softtabstop=2|
+\ set shiftwidth=2|
+\ set shiftwidth=2|
+\ set expandtab
+
 
 " netrw plugin
+let NERDTreeShowHidden=1
 let g:netrw_preview = 1
 autocmd StdinReadPre * let s:std_in=1
 map <C-n> :NERDTreeToggle<CR>
@@ -39,9 +66,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_show_hidden = 1
 
-set tabstop=2
-set shiftwidth=2
-set expandtab
+
 set cursorline
 set laststatus=2
 
@@ -53,7 +78,6 @@ let mapleader = ","
 "highlight search result switch
 :noremap <Space> :set hlsearch! hlsearch?<CR>
 
-set fdm=indent
 
 "Find text selected in visual mode
 :vnoremap // y/<C-R>"<CR>
@@ -62,7 +86,7 @@ set fdm=indent
 nmap ;' :let @*=expand("%")<CR>
 nmap ,. :let @*=expand("%:p")<CR>
 
-"To press F5 under ctrlp opening for finding a file node which created by NERDTree without reopen vim
+"To press F5 under ctrlp opening for finding a file node which created by NERDTree without reopen vim 
 let g:NERDTreeChDirMode       = 2
 let g:ctrlp_working_path_mode = 'rw'
 
@@ -72,7 +96,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-"Only enable emmet plugin for insert mode and html css file type.
+"Only enable emmet plugin for insert mode and html css file type. 
 let g:user_emmet_mode='i'    "only enable insert mode functions
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
@@ -85,7 +109,7 @@ endif
 
 "resize window horizontally
 if bufwinnr(1)
-  map & :vertical resize -5<CR>
+  map & :vertical resize -5<CR> 
   map * :vertical resize +5<CR>
 endif
 
