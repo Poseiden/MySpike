@@ -80,7 +80,7 @@ let mapleader = ","
 
 
 "Find text selected in visual mode
-:vnoremap // y/<C-R>"<CR>
+:vnoremap // y/\<<C-R>"\><CR>
 
 "Copy currrent file name or full file path to system clipboard.
 nmap ;' :let @*=expand("%")<CR>
@@ -119,3 +119,5 @@ set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
 "show datetime on vim-airline
 :let g:airline_section_b = '%{strftime("%H:%M")}'
+
+:vnoremap <C-c> "*y
